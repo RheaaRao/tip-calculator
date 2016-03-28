@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 var submit = document.getElementById('submit');
 submit.onclick= tipCalculate;
 
@@ -39,14 +39,6 @@ function getPercChecked(){
 
 
 
-function reset (){
-    document.getElementById('tipamount').innerHTML = "";
-    var choose = document.getElementsByClassName("tip-btn");
-   for(var i=0;i<choose.length;i++)
-    choose[i].checked = false;
-}
-
-document.getElementById('reset').onclick= reset;
 
  
 =======
@@ -94,6 +86,14 @@ function getPercChecked(){
   }
 }
 
-//FOR HOMEWORK
-function resetCalc(){}
->>>>>>> 9996f81c732dcdd549337b01f52b1fdc11feefca
+
+function reset (){
+    document.getElementById('tipamount').innerHTML = "";
+    var choose = document.getElementsByClassName("tip-btn");
+   for(var i=0;i<choose.length;i++)
+    choose[i].checked = false;
+  document.getElementById('bill').value="";
+}
+
+document.getElementById('reset').onclick= reset;
+
